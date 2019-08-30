@@ -1,5 +1,9 @@
 package standalonesNewDefault;
 
+/**
+ * @author Nathan
+ *
+ */
 public class BankAccountObj {
 	private String accountNumberFull;
 	private int accountNumber;
