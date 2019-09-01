@@ -46,7 +46,19 @@ public class SupOrganism {
 		
 	}
 	
-//	non-mutator, information-passing methods
+//	non-mutator, info-returning methods
+	
+	public static int getTotal() {
+		return numOrganisms;
+	}
+	
+	public static int getTotalAlive() {
+		return numOrganisms - numOrganismsDead;
+	}
+	
+	public static int getTotalDead() {
+		return numOrganismsDead;
+	}
 	
 	public double getSize() {
 		return size;
@@ -54,5 +66,13 @@ public class SupOrganism {
 	
 	public boolean getIsAlive() {
 		return isAlive;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void printSummary() {
+		System.out.println("Organism Summary:\nName - " + name + "\nAlive - " + (isAlive ? "Yes" : "No") + "\nSize - " + size);
 	}
 }
